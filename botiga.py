@@ -8,8 +8,8 @@ def aplicar_ajust_categoria(preu, categoria):
     """
     Calcula el preu ajustat segons el tipus de producte.
     """
-    if categoria == "ROBA":
-        return preu * DESCOMPTE_ROBA
+    if categoria == "ROBA":                     # Aquesta funció es l'encarregada de gestionar els preus segons la categoria
+        return preu * DESCOMPTE_ROBA            # Sense aquesta funció el codi principal es veuria "Brut"
     elif categoria == "ELECTRONICA":
         return preu * RECARREC_ELECTRONICA
     return preu
